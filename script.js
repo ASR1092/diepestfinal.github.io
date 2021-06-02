@@ -39,6 +39,10 @@ var advanceTo = function(s) {
   console.log(life)
   console.log(s.lifeChange)
   life = life - s.lifeChange;
+  if(life > 100)
+  {
+    life = 100;
+  }
   changeImage(s.image);
   changeText(s.text);
   changeButtons(s.buttons);
@@ -50,12 +54,12 @@ var advanceTo = function(s) {
 scenario = {};
 var scenario = {
   one: {    
-    lifeChange:"0",
+    lifeChange:"-1000",
     image: 'logo.png', // IntroFirst situation, picture of teacher
     text: "Bist du bereit dich einem Abenteuer zu stellen? Begib dich auf eine Reis zurück ins 14. Jahrhundert und stelle dein Wissen unter Beweis. Die Pest ist über dein Dorf herreingebrochen und du siehst dich mit diversen Entscheidungen konfrontiert um dich und deine Familie sicher durch diese Zeit zu bringen. Bevor wir die Zeitreise starten, verrätst du uns noch deinen Namen? Das Abenteuer beginnt, sobald du Enter drückst!",
   },
   two: {
-    lifeChange: "0",
+    lifeChange: "-1000",
     image: 'Frage1.png', //This is the classroom. The first choice you will have to make in this game.
     text: "NAME, Stell’ dir vor, wir haben das Jahr 1348 und die Pest fängt gerade an, sich in Europa auszubreiten. Du kommst mit deiner Familie in Europa an, und versuchst deine Liebsten bestmöglich vor einer Infektion zu schützen. Ihr wollt euch hier sesshaft machen, doch es ist noch unklar, wo genau ihr eure neue Heimat wählt. Wo würdest du zur Zeit der Pest am liebsten leben? Du hast aktuell noch LIFE % Leben!",
     buttons: [["In einer Hafenstadt", "advanceTo(scenario.onea)"],["In einer Handelsstadt", "advanceTo(scenario.oneb)"],["Auf einem Schiff", "advanceTo(scenario.onec)"],["Abgelegen in den Bergen", "advanceTo(scenario.fiveteen)"]],
