@@ -283,7 +283,7 @@ var scenario = {
   fourteen: {
     lifeChange: "0",
     image: 'platzhalter.png',
-    text: "Richtig! Erwachsene hatten meistens ein stärkeres Immunsystem und bessere Abwehrkräfte als Kinder und Jugendlichen und haben die Pest daher eher überstanden. Wie es scheint bist du mit dem Leben davon gekommen. Wenn du möchtest kannst du noch einmal spiele, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
+    text: "Richtig! Erwachsene hatten meistens ein stärkeres Immunsystem und bessere Abwehrkräfte als Kinder und Jugendlichen und haben die Pest daher eher überstanden. Wie es scheint bist du mit dem Leben davon gekommen. Wenn du möchtest kannst du noch einmal spielen, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
     buttons: [["Noch einmal spielen", "advanceTo(scenario.two)"]]
   },
   fiveteen: {
@@ -379,13 +379,13 @@ var scenario = {
   thirty: {
     lifeChange: "4",
     image: 'platzhalter.png',
-    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Kindern sind beides Faktoren, die sich negativ auf die Überlebenschance von Kindern ausgewirkt hat. Wenn du möchtest kannst du noch einmal spiele, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
+    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Kindern sind beides Faktoren, die sich negativ auf die Überlebenschance von Kindern ausgewirkt hat. Wenn du möchtest kannst du noch einmal spielen, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
     buttons: [["Noch einmal spielen", "advanceTo(scenario.two)"]]
   },
   thirtyone: {
     lifeChange: "4",
     image: 'platzhalter.png',
-    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Jugendlichen sind beides Faktoren, die sich negativ auf die Überlebenschance von Jugendlichen ausgewirkt hat. Wenn du möchtest kannst du noch einmal spiele, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
+    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Jugendlichen sind beides Faktoren, die sich negativ auf die Überlebenschance von Jugendlichen ausgewirkt hat. Wenn du möchtest kannst du noch einmal spielen, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
     buttons: [["Noch einmal spielen", "advanceTo(scenario.two)"]]
   },
 
