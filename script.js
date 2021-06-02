@@ -37,8 +37,6 @@ var changeButtons = function(buttonList) { //This transitions the buttons in the
 };
 
 var advanceTo = function(s) {
-  console.log(life)
-  console.log(s.lifeChange)
   life = life - s.lifeChange;
   if(life > 100)
   {
