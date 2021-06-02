@@ -334,6 +334,7 @@ button{
   width: 500px;
   height: 28px;
   bottom: 56px;
+  position: relative;
 }
 
 
