@@ -298,7 +298,7 @@ var scenario = {
     lifeChange: "0",
     image: 'Frage5.png', 
     text: "Super! Das eigene Haus war üblicherweise der sicherste Ort, solange man keinen Besuch empfing und niemand in der Familie krank war. Jedoch treffen keine guten Neuigkeiten ein – Trotz des Einhaltens deiner gesetzten Maßnahmen, zeigt eines deiner Familienmitglieder Symptome einer Pesterkrankung. Was ist der beste Schritt um weitere Infektionen in deiner Familie zu vermeiden? Du hast aktuell noch LIFE % Leben!",
-    buttons: [["Das infizierte Familienmitglied zurücklassen", "advanceTo(scenario.eightteen)"],["Das Familienmitglied pflegen", "advanceTo(scenario.)"],["Einen Aderlass vornehmen", "advanceTo(scenario.twentyone)"],["Beten", "advanceTo(scenario.twentytwo)"]]
+    buttons: [["Das infizierte Familienmitglied zurücklassen", "advanceTo(scenario.eightteen)"],["Das Familienmitglied pflegen", "advanceTo(scenario.ninea)"],["Einen Aderlass vornehmen", "advanceTo(scenario.twentyone)"],["Beten", "advanceTo(scenario.twentytwo)"]]
   },
   eightteen: { 
     lifeChange: "0",
@@ -316,19 +316,19 @@ var scenario = {
     lifeChange: "3",
     image: 'Frage5.png', 
     text: "Der Marktplatz ist so wie alle anderen öffentlichen Plätze kein guter Ort, um sich währen der Pestpandemie aufzuhalten. Es besteht ein hohes Risiko, dass man von einem Passanten mit der Pest angesteckt wird. Du versuchst daher in Zukunft solche Orte zu meiden. Jedoch gibt es dennoch keine guten Neuigkeiten – Trotz des Einhaltens deiner gesetzten Maßnahmen, zeigt eines deiner Familienmitglieder Symptome einer Pesterkrankung. Was ist der beste Schritt um weitere Infektionen in deiner Familie zu vermeiden? Du hast aktuell noch LIFE % Leben!",
-    buttons: [["Das infizierte Familienmitglied zurücklassen", "advanceTo(scenario.eightteen)"],["Das Familienmitglied pflegen", "advanceTo(scenario.)"],["Einen Aderlass vornehmen", "advanceTo(scenario.twentyone)"],["Beten", "advanceTo(scenario.twentytwo)"]]
+    buttons: [["Das infizierte Familienmitglied zurücklassen", "advanceTo(scenario.eightteen)"],["Das Familienmitglied pflegen", "advanceTo(scenario.ninea)"],["Einen Aderlass vornehmen", "advanceTo(scenario.twentyone)"],["Beten", "advanceTo(scenario.twentytwo)"]]
   },
   twentyone: {
     lifeChange: "8",
     image: 'Frage6.png', 
     text: "Der Aderlass ist eine Behandlungsmethode, die während der Pestpandemie oft von Medizinern vorgenommen wurde. Heute weiß man, dass dies dem Erkrankten mehr geschadet als geholfen hat, deswegen ist davon definitiv abzurate! Du scheinst dich noch nicht gut genug mit der Pest auszukennen. Du scheinst jedoch eine der wenigen Personen im Dorf zu sein, denen es noch gut geht. Der örtliche Bischof kommt alleine nicht mit der Lage des Dorfes zurecht und bittet dich deshalb um Rat, welche Maßnahmen vorzunehmen sind, um die weitere Ausbreitung der Pest im Dorf möglichst zu verhindern. Welche Maßnahmen empfiehlst du dem Bischof? Du hast aktuell noch LIFE % Leben!",
-    buttons: [["Häuser ausräuchern", "advanceTo(scenario.twentythree)"],["Quarantäne", "advanceTo(scenario.)"],["Bußprozessionen", "advanceTo(scenario.twentyfour)"]]
+    buttons: [["Häuser ausräuchern", "advanceTo(scenario.twentythree)"],["Quarantäne", "advanceTo(scenario.eleven)"],["Bußprozessionen", "advanceTo(scenario.twentyfour)"]]
   },
   twentytwo: {
     lifeChange: "3",
     image: 'Frage6.png', 
     text: "Viele hielten damals den Ausbruch der Pest für eine Strafe Gottes. Auch wenn die Krankheit dadurch nicht gelindert wurde, wendeten sich die Menschen in Zeiten der Not an den Gott. Da der Wissensstand über Infektionskrankheiten im Mittelalter noch sehr gering war, hat den Glauben der Bevölkerung an das Übersinnliche noch weiter verstärkt. Der örtliche Bischof kommt alleine nicht mit der Lage des Dorfes zurecht und bittet dich deshalb um Rat, welche Maßnahmen vorzunehmen sind, um die weitere Ausbreitung der Pest im Dorf möglichst zu verhindern. Welche Maßnahmen empfiehlst du dem Bischof? Du hast aktuell noch LIFE % Leben!",
-    buttons: [["Häuser ausräuchern", "advanceTo(scenario.twentythree)"],["Quarantäne", "advanceTo(scenario.)"],["Bußprozessionen", "advanceTo(scenario.twentyfour)"]]
+    buttons: [["Häuser ausräuchern", "advanceTo(scenario.twentythree)"],["Quarantäne", "advanceTo(scenario.eleven)"],["Bußprozessionen", "advanceTo(scenario.twentyfour)"]]
   },
   twentythree: {
     lifeChange: "6",
@@ -370,7 +370,7 @@ var scenario = {
     lifeChange: "7",
     image: 'Bonusfrage.png', 
     text: "Hunde fangen leicht pestbefallene Flöhe auf, die widerum Menschen anstecken können. Keine gute Idee. Bleib weiterhin achtsam! Du hast die Pest fast überstanden! Obwohl die Pest Menschen aus jeder Altersgruppe befallen hat, zeigten Menschen einer Altersgruppe wesentlich höhere Überlebenschancen als die anderen. Welche glaubst du ist das? Du hast aktuell noch LIFE % Leben!",
-    buttons: [["Kind", "advanceTo(scenario.thirty)"],["Jugendlicher", "advanceTo(scenario.)"],["Erwachsener", "advanceTo(scenario.fourteen)"]]
+    buttons: [["Kind", "advanceTo(scenario.thirty)"],["Jugendlicher", "advanceTo(scenario.thirtyone)"],["Erwachsener", "advanceTo(scenario.fourteen)"]]
   },
   thirty: {
     lifeChange: "4",
