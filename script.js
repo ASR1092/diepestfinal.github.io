@@ -51,7 +51,7 @@ scenario = {};
 var scenario = {
   one: {    
     lifeChange:"0",
-    image: 'logo.PNG', // IntroFirst situation, picture of teacher
+    image: 'logo.png', // IntroFirst situation, picture of teacher
     text: "Bist du bereit dich einem Abenteuer zu stellen? Begib dich auf eine Reis zurück ins 14. Jahrhundert und stelle dein Wissen unter Beweis. Die Pest ist über dein Dorf herreingebrochen und du siehst dich mit diversen Entscheidungen konfrontiert um dich und deine Familie sicher durch diese Zeit zu bringen. Bevor wir die Zeitreise starten, verrätst du uns noch deinen Namen? Das Abenteuer beginnt, sobald du Enter drückst!",
   },
   two: {
