@@ -37,6 +37,8 @@ var changeButtons = function(buttonList) { //This transitions the buttons in the
 };
 
 var advanceTo = function(s) {
+  console.log(life)
+  console.log(s.lifeChange)
   life = life - s.lifeChange;
   if(life > 100)
   {
@@ -79,7 +81,7 @@ var scenario = {
   onec:{
     lifeChange: "7",
     image: 'Frage1.png',  //This is the classroom. The first choice you will have to make in this game.
-    text: "Nachdem du entschieden hast, dich auf den Weg zur nächstgelegenen Hafenstadt zu machen, um dort auf einem Schiff an Bord zu gehen, begegnet dir auf halber Strecke ein Handelstrupp, mit dem du ein kurzes Gespräch führst. Als du einem der Männer von deinem Vorhaben erzählst, schaut er dich verwundert an, und sagt, dass das alles andere als eine gute Idee wäre. Ein Schiff ist kein geeigneter Ort, um mit einer Familie zu leben. Es besteht die Gefahr, dass in einem der Anlegeorte des Schiffs die Pest verbreitet ist, und Familienmitglieder sich anstecken. rauen durften zur Zeit der Pest nicht auf Schiffen leben.",
+    text: "Nachdem du entschieden hast, dich auf den Weg zur nächstgelegenen Hafenstadt zu machen, um dort auf einem Schiff an Bord zu gehen, begegnet dir auf halber Strecke ein Handelstrupp, mit dem du ein kurzes Gespräch führst. Als du einem der Männer von deinem Vorhaben erzählst, schaut er dich verwundert an, und sagt, dass das alles andere als eine gute Idee wäre. Ein Schiff ist kein geeigneter Ort, um mit einer Familie zu leben. Es besteht die Gefahr, dass in einem der Anlegeorte des Schiffs die Pest verbreitet ist, und Familienmitglieder sich anstecken. Frauen durften zur Zeit der Pest nicht auf Schiffen leben.",
     buttons: [["Kein geeigneter Ort", "advanceTo(scenario.onecc)"],["Ansteckung", "advanceTo(scenario.onecc)"],["Verbot", "advanceTo(scenario.onecc1)"]],
   },
   oneaa1:{
@@ -133,13 +135,13 @@ var scenario = {
   three: {
     lifeChange: "0",
     image: 'Frage2.png', 
-    text: "Einige Wochen vergehen. Nachdem du für deine Familie ein schönes Haus abseits eines kleinen Dorfes kaufen konntest, wird das Geld knapp. Um deine Familie weiterhin erhalten zu können, musst du dir also einen passenden Beruf finden, um etwas Geld zu verdienen! Welchen Beruf würdest du zur Zeit der Pest wählen?",
+    text: "Einige Wochen vergehen. Nachdem du für deine Familie ein schönes Haus abseits eines kleinen Dorfes kaufen konntest, wird das Geld knapp. Um deine Familie weiterhin erhalten zu können, musst du also einen passenden Beruf finden, um etwas Geld zu verdienen! Welchen Beruf würdest du zur Zeit der Pest wählen?",
     buttons: [["Totengräber", "advanceTo(scenario.sixteen)"],["Seemann", "advanceTo(scenario.threea)"],["Geistlicher", "advanceTo(scenario.threeb)"],["Fahrender Händler", "advanceTo(scenario.nineteen)"]],
   },
   threea: {
     lifeChange: "9",
     image: 'Frage2.png', 
-    text: "Obwohl deine Wahl leider nicht optimal ist, gehst du ab jetzt deinem Beruf als Seemann nach. Vielleicht hast du ja eine Idee, warum die Entscheidung nicht die Beste war. War es weil es zur Zeit der Pest viele Piratenangriffe gab, da die Nahrungsmittel der Piraten knapp waren? Oder war man als Seemann dem Risiko ausgesetzt, dass die Pest an den Häfen der Städte ausgebreitet war, und man sich anstecken konnte. Oder waren die Schiffe meistens verdreckt und es gibt so gut wie keine Hygiene unter der Schiffsbesatzung.",
+    text: "Obwohl deine Wahl leider nicht optimal ist, gehst du ab jetzt deinem Beruf als Seemann nach. Vielleicht hast du ja eine Idee, warum die Entscheidung nicht die Beste war. War es, weil es zur Zeit der Pest viele Piratenangriffe gab, da die Nahrungsmittel der Piraten knapp waren? Oder war man als Seemann dem Risiko ausgesetzt, dass die Pest an den Häfen der Städte ausgebreitet war und man sich anstecken konnte. Oder waren die Schiffe meistens verdreckt und es gibt so gut wie keine Hygiene unter der Schiffsbesatzung.",
     buttons: [["Nahrungsmittel", "advanceTo(scenario.threeaa1)"],["Anstecken", "advanceTo(scenario.threeaa)"],["Hygiene", "advanceTo(scenario.threeaa)"]],
   },
   threeaa: {
@@ -283,7 +285,7 @@ var scenario = {
   fourteen: {
     lifeChange: "0",
     image: 'platzhalter.png',
-    text: "Richtig! Erwachsene hatten meistens ein stärkeres Immunsystem und bessere Abwehrkräfte als Kinder und Jugendlichen und haben die Pest daher eher überstanden. Wie es scheint bist du mit dem Leben davon gekommen. Wenn du möchtest kannst du noch einmal spielen, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
+    text: "Richtig! Erwachsene hatten meistens ein stärkeres Immunsystem und bessere Abwehrkräfte als Kinder und Jugendlichen und haben die Pest daher eher überstanden. Wie es scheint bist du mit dem Leben davon gekommen. Wenn du möchtest kannst du noch einmal spiele, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
     buttons: [["Noch einmal spielen", "advanceTo(scenario.two)"]]
   },
   fiveteen: {
@@ -379,13 +381,13 @@ var scenario = {
   thirty: {
     lifeChange: "4",
     image: 'platzhalter.png',
-    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Kindern sind beides Faktoren, die sich negativ auf die Überlebenschance von Kindern ausgewirkt hat. Wenn du möchtest kannst du noch einmal spielen, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
+    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Kindern sind beides Faktoren, die sich negativ auf die Überlebenschance von Kindern ausgewirkt hat. Wenn du möchtest kannst du noch einmal spiele, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
     buttons: [["Noch einmal spielen", "advanceTo(scenario.two)"]]
   },
   thirtyone: {
     lifeChange: "4",
     image: 'platzhalter.png',
-    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Jugendlichen sind beides Faktoren, die sich negativ auf die Überlebenschance von Jugendlichen ausgewirkt hat. Wenn du möchtest kannst du noch einmal spielen, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
+    text: "Das wegen des Alters noch schwache Immunsystem sowie die im Mittelalter übliche Unterernährung von Jugendlichen sind beides Faktoren, die sich negativ auf die Überlebenschance von Jugendlichen ausgewirkt hat. Wenn du möchtest kannst du noch einmal spiele, vielleicht nimmt die Geschichte diesmal einen anderen Verlauf...",
     buttons: [["Noch einmal spielen", "advanceTo(scenario.two)"]]
   },
 
